@@ -43,7 +43,9 @@
 #### 项目整体架构
 
 1、React16，Router4.0，Redux
+
 2、Axios，Map，ECharts，AntD
+
 3、菜单，权限，Header，Footer，ETable，EForm，Loading，API，Axios ....
 
 1.2.3  《=== json ===》 Mock-Server
