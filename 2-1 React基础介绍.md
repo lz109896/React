@@ -59,6 +59,8 @@
   
   windows安装：npm -g
   
+   windows安装 在Nodejs环境下，通过npm install -g yarn 命令进行全局安装
+  
   MAC 安装 Yarn： brew updete
   
 - 如何使用Yarn
