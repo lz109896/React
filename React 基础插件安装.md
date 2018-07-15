@@ -23,16 +23,75 @@ webpack.config.dev.js 修改完，复制 less-loader 粘贴在 webpack.config.pr
 
 AntD 是支付宝开发的
 
-
+输入 sudo yarn add less@^2.7.3  报错：'sudo' 不是内部或外部命令，也不是可运行的程序或批处理文件。
+解决方法：降版本，windows中应直接省略去掉 sudo 即可
 
 
 #### 第二节:项目主页结构开发
+###### 主页结构定义
+- 页面结构定义
+- 目录结构定义
+- 栅格系统使用
+- calc计算方法使用
+
+标准的 React 组件开发
+
+```js
+impoprt React fort 'react'
+
+export default clss Admin extends React.Component{
+    render(){
+        return (
+            <div></div>
+        );
+    }
+}
+
+React.Component   继承React
+只能有一个<div></div>标签
+必须有 return ，不然报错
 
 
+```
+语法：
+calc() = calc(四则运算)
 
+说明：
+用于动态计算长度值。
+需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+任何长度值都可以使用calc()函数进行计算；
+calc()函数支持 "+", "-", "*", "/" 运算；
+calc()函数使用标准的数学运算优先级规则；语法：
+calc() = calc(四则运算)
 
+说明：
+用于动态计算长度值。
+需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+任何长度值都可以使用calc()函数进行计算；
+calc()函数支持 "+", "-", "*", "/" 运算；
+calc()函数使用标准的数学运算优先级规则；
 
+```html
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>calc()函数_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+.test {
+	width: calc(100% - 50px);
+	background: #eee;
+}
+</style>
+</head>
+<body>
+<div class="test">我的宽度为100% - 50px</div>
+</body>
+</html>
 
+```
+100vh = 100%
 
 #### 第三节:菜单组件开发
 
