@@ -102,13 +102,25 @@ http://design.alipay.com/develop/mobile/components/result/
 .svg 是矢量图，不会失真，需要特定去开发的
 public 文件夹是公共文件夹，项目做完后，会通过 yarn budle 打包生成的文件夹目录，最终源码都会在public 文件夹，最后会把public 的子目录部署到服务器进行运行 ；静态文件（图片、css文件、第三方JS文件都会放在 public 文件夹）
 
+###### 百度天气预报接口介绍
+百度提供天气预报查询接口API，可以根据经纬度/城市名查询天气情况，我们可以在微信公众平台开发中调用这一接口。
+
+接口说明
+根据经纬度/城市名查询天气的结果
+
+接口示例
+http://api.map.baidu.com/telematics/v3/weather?location=北京&output=json&ak=6tYzTvGZSOpYB5Oc2YGGOKt8
+
+百度ak申请地址：http://lbsyun.baidu.com/apiconsole/key
+创建应用==》类型：浏览器端==》填写名称==》点击提交
+
+接口参数说明：详情查看博客：https://blog.csdn.net/younghaiqing/article/details/54799303
 
 
 
+在package.json 安装调用（百度API）插件 ：yarn add jsonp --save
 
-
-
-
+如果需要管理员的方式运行，在命令行前面加：sudo 
 
 #### 第四节:头部组件开发
 
@@ -123,15 +135,32 @@ public 文件夹是公共文件夹，项目做完后，会通过 yarn budle 打�
 
 
 
-
 #### 第五节:底部组件开发
 
+###### 底部组件实现·
+- 底部组件布局 . 
+- Home页面实现·
+- 使用CSS实现箭头图标.
 
 
+###### 后缀 less 和css的文件区别：
+css是不能够定义变量的，也不能嵌套。它没有编程语言的特性。在项目开发中，常常发现有很多css代码是相同的，但我们通常都是复制然后粘贴。
+
+举个例子：假设h5应用里主题色是#FF3A6D，可能用于文字或者背景色。通常开发中，哪里需要这个颜色，我们就复制这个颜色并粘贴。下次要修改就得全部查找批量替换，其实不是很方便。
+
+less是预处理css，使我们写css更方便快速，它类似于css和js的结合体，有js的特征但写出来是css。less的学习成本几乎为0 ，只要你会写css就会写less。
+由于less文件本身就是文本，所以不用特别安装什么编辑器，通常的代码编辑器都能进行编辑。它扩充了 CSS 语言，增加了诸如变量、混合（mixin）、函数等功能，让 CSS 更易维护、方便制作主题、扩充。
 
 
+下面是如何将less文件转换成css文件：
 
+Less官网：http://lesscss.org/
 
+Less中文网：（结合以下两个网站看）
+
+http://lesscss.cn/（推荐看这个网站，但翻译不完整）
+http://less.bootcss.com/（翻译比较完整，但版本过低）
+具体操作查看博客：https://blog.csdn.net/erdouzhang/article/details/54898228
 
 
 
