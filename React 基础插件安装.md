@@ -95,8 +95,12 @@ calc()函数使用标准的数学运算优先级规则；
 
 #### 第三节:菜单组件开发
 
+https://ant.design/components/grid-cn/
 
+http://design.alipay.com/develop/mobile/components/result/
 
+.svg 是矢量图，不会失真，需要特定去开发的
+public 文件夹是公共文件夹，项目做完后，会通过 yarn budle 打包生成的文件夹目录，最终源码都会在public 文件夹，最后会把public 的子目录部署到服务器进行运行 ；静态文件（图片、css文件、第三方JS文件都会放在 public 文件夹）
 
 
 
